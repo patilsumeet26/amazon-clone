@@ -5,14 +5,16 @@
 }
 
 .navbar {
-    height: 57px;
-    background-color:black;
+    min-height: 57px;
+    background-color: black;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
+    padding: 0 10px;
 }
+
 .nav-logo {
     height: 47px;
     width: 97px;
@@ -51,12 +53,14 @@
 /**B3**/
 .nav-search {
     display: flex;
-    justify-content: space-evenly;
-    background-color: pink;
-    width: 620px;
+    flex: 1;
+    max-width: 620px;
+    min-width: 250px;
     height: 40px;
     border-radius: 4px;
+    margin: 8px;
 }
+
 
 .search-select {
     background-color: #f3f3f3;
@@ -164,20 +168,20 @@ span {
     background-color: #e2e7e6;
 }
 .box {
-    height: 400px;
-    width: 23%;
+    width: 100%;
+    max-width: 300px;
     background-color: white;
     padding: 20px 0px 15px;
     margin-top: 16px;
 }
 
-.boximg {
-    height: 300px;
-    background-size: cover;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 
+.boximg {
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 
 .box-content {
     margin-left: 1rem;
@@ -204,11 +208,13 @@ footer {
 
 .foot-panel2 {
     background-color: #222f3d;
-    color:white;
-    height: 500px;
+    color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 20px 0;
 }
+
 
 ul {
     margin-top: 15px;
